@@ -1,5 +1,4 @@
 * {
-  border: 1px solid green;
   box-sizing: border-box;
 }
 
@@ -51,6 +50,9 @@ body {
   height: auto;
   width: auto;
   background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -60,23 +62,53 @@ h1 {
   margin: 0;
 }
 
+.hero-text p {
+  margin-top: 0;
+}
+
 .submit {
   background-color: #3882f6;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 5px 35px;
+}
+
+.info, .quote {
+  padding: 0 23%;
 }
 
 .info h2 {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
+  text-align: center;
+  margin: 0;
+  padding: 42px;
 }
 
 .card-container {
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding-bottom: 120px;
+}
+
+.info-card {
+  text-align: center;
+  color: #1f2937;
+}
+
+.info-card object {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; 
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+}
+
+.info-card p {
+  margin: 0;
 }
 
 .quote {
@@ -84,18 +116,53 @@ h1 {
   font-size: 36px;
   font-style: italic;
   color: #1f2937;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quote p:first-child {
+  margin-bottom: 0;
+}
+
+.quote p:last-child {
+  text-align: right;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 0;
 }
 
 .sign-up {
   display: flex;
+  margin: 100px 15%;
+  background-color: #3882f6;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
 }
 
 .sign-up-left {
   flex: 2;
+  padding: 30px 5%;
+}
+
+.sign-up-left h4 {
+  margin: 0;
+}
+
+.sign-up-left p {
+  margin: 0;
 }
 
 .sign-up-right {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-right .submit {
+  border-color: white;
 }
 
 .footer {
@@ -103,3 +170,10 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/*
+TO DO:
+- Check color & font style list
+- info pics
+- Clean up
+*/
